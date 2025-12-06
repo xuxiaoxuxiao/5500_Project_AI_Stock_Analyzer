@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stock Analysis Result</title>
+</head>
+<body>
+    <h3>{{ ticker }} — Indicators</h3>
+    <p><strong>Last Price:</strong> {{ last_price }}</p>
+    <p><strong>SMA 20:</strong> {{ sma20 }}</p>
+    <p><strong>SMA 50:</strong> {{ sma50 }}</p>
+    <p><strong>RSI:</strong> {{ rsi }}</p>
+
+    <h3>ChatGPT Recommendation</h3>
+    <p><strong>Action:</strong> {{ result.recommendation.action }}</p>
+    <p><strong>Confidence:</strong> {{ result.recommendation.confidence }}/10</p>
+    <p>{{ result.recommendation.explanation }}</p>
+    <p><em>{{ result.recommendation.disclaimer }}</em></p>
+
+</body>
+</html>

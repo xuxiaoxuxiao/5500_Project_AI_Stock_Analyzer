@@ -1,0 +1,66 @@
+{
+  "data": {
+    "AAPL": {
+      "ticker": "AAPL",
+      "last_price": "278.78",
+      "sma20": "274.76",
+      "sma50": "265.44",
+      "rsi": "N/A",
+      "recommendation": {
+        "action": "Buy",
+        "confidence": 7,
+        "explanation": "The last close price of AAPL at 278.78 is above both the 20-day SMA of 274.76 and the 50-day SMA of 265.44. This suggests a bullish trend, indicating that the stock may continue to rise in the near term. However, the 14-day RSI is not available, which limits the analysis of momentum. Overall, the price being above the SMAs is a positive sign.",
+        "disclaimer": "This analysis is for educational purposes only and is not financial advice. Please conduct your own research or consult a financial advisor before making investment decisions."
+      },
+      "chart_data": []
+    },
+    "GOOG": {
+      "ticker": "GOOG",
+      "last_price": "322.09",
+      "sma20": "301.67",
+      "sma50": "275.27",
+      "rsi": "N/A",
+      "recommendation": {
+        "action": "Buy",
+        "confidence": 8,
+        "explanation": "The last close price of GOOG at 322.09 is significantly above both the 20-day SMA of 301.67 and the 50-day SMA of 275.27. This indicates a strong upward trend, suggesting that the stock may continue to perform well in the near term. However, the 14-day RSI is not available, which limits the ability to assess overbought or oversold conditions.",
+        "disclaimer": "This analysis is for educational purposes only and is not financial advice. Please consult a financial advisor before making any investment decisions."
+      },
+      "chart_data": []
+    },
+    "SNPS": {
+      "ticker": "SNPS",
+      "last_price": "466.76",
+      "sma20": "411.26",
+      "sma50": "438.60",
+      "rsi": "N/A",
+      "recommendation": {
+        "action": "Buy",
+        "confidence": 7,
+        "explanation": "The last close price of SNPS at 466.76 is significantly above both the 20-day SMA (411.26) and the 50-day SMA (438.60). This suggests a strong upward trend, indicating potential for further price appreciation. However, the 14-day RSI is not available, which limits the analysis. Overall, the price being above the SMAs indicates bullish momentum.",
+        "disclaimer": "This analysis is for educational purposes only and is not financial advice. Please conduct your own research or consult a financial advisor before making investment decisions."
+      },
+      "chart_data": []
+    },
+    "META": {
+      "ticker": "META",
+      "last_price": "673.42",
+      "sma20": "623.78",
+      "sma50": "675.37",
+      "rsi": "N/A",
+      "recommendation": {
+        "action": "Hold",
+        "confidence": 6,
+        "explanation": "The last close price of META at 673.42 is slightly below the 50-day SMA of 675.37, which may indicate a potential resistance level. However, it is above the 20-day SMA of 623.78, suggesting a bullish trend in the short term. The RSI is not available, which limits the analysis. Given these mixed signals, holding the stock may be prudent until further indicators are available.",
+        "disclaimer": "This analysis is for educational purposes only and should not be considered financial advice."
+      },
+      "chart_data": []
+    }
+  },
+  "history": [
+    "GOOG",
+    "META",
+    "SNPS",
+    "AAPL"
+  ]
+}

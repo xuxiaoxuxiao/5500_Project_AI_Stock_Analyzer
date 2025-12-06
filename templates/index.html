@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-UTF">
+    <title>AI Stock Analyzer</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <script defer src="/static/script.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <h1>📈 AI Stock Analyzer</h1>
+
+    <form method="POST">
+        <input type="text" name="ticker" placeholder="Enter ticker (AAPL)" required autocomplete="off">
+        <button type="submit">Analyze</button>
+    </form>
+
+    {% if history %}
+        <h3>Recent Searches</h3>
+        <div class="tag-container">
+            {% for item in history %}
+                <button class="tag" onclick="useTicker('{{ item }}')">{{ item }}</button>
+            {% endfor %}
+        </div>
+    {% endif %}
+
+    {% if error_message %}
+        <div class="error">{{ error_message }}</div>
+    {% endif %}
+
+    {% if result %}
+        <div class="result-box">
+            <h2>{{ result.ticker }} — Indicators</h2>
+            <ul style="list-style:none; padding:0; text-align:left;">
+                <li><strong>Last Price:</strong> {{ result.last_price }}</li>
+                <li><strong>SMA 20:</strong> {{ result.sma20 }}</li>
+                <li><strong>SMA 50:</strong> {{ result.sma50 }}</li>
+                <li><strong>RSI:</strong> {{ result.rsi }}</li>
+            </ul>
+
+            {% set rec = result.recommendation %}
+            {% if rec %}
+                {% set action = rec.action.upper() %}
+
+                {% if action == "BUY" %}
+                    {% set color = "#1cbf4a" %}
+                {% elif action == "SELL" %}
+                    {% set color = "#d72638" %}
+                {% else %}
+                    {% set color = "#ff8c00" %}
+                {% endif %}
+
+                <h2 style="color: {{ color }};">Action: {{ action }}</h2>
+                <p><strong>Confidence:</strong> {{ rec.confidence }}/10</p>
+                <p>{{ rec.explanation }}</p>
+                <p><em>{{ rec.disclaimer }}</em></p>
+            {% endif %}
+        </div>
+    {% endif %}
+</div>
+
+</body>
+</html>
