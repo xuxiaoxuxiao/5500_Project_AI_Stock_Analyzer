@@ -32,5 +32,32 @@ AI Stock Analyzer is a lightweight web application that analyzes U.S. stock perf
 | Frontend | HTML + CSS (custom modern design) |
 | Caching | Local JSON history |
 
+## 📘 How to Use AI Stock Analyzer
+
+Follow these simple steps to analyze any U.S. stock:
+
+---
+
+### 1️⃣ Start the Application
+
+Run this command inside the project folder:
+
+```bash
+python app.py
+
+Then open your browser and visit:
+
+👉 http://127.0.0.1:5000/
+
+2️⃣ Enter a Stock Ticker Symbol
+
+Type a valid stock code into the search box, for example:
+
+AAPL
+TSLA
+NVDA
+META
+AMZN
 
 
+Then click Analyze.
