@@ -42,14 +42,13 @@ Follow these simple steps to analyze any U.S. stock:
 
 Run this command inside the project folder:
 
-```bash
 python app.py
 
 Then open your browser and visit:
 
 👉 http://127.0.0.1:5000/
 
-2️⃣ Enter a Stock Ticker Symbol
+### 2️⃣ Enter a Stock Ticker Symbol
 
 Type a valid stock code into the search box, for example:
 
