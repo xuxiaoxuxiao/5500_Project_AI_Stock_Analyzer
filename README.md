@@ -36,3 +36,17 @@ AI Stock Analyzer is a lightweight web application that analyzes U.S. stock perf
 
 ## 📦 Project Structure
 
+project/
+│
+├── app.py # Main Flask app
+├── main_logic.py # Indicator & AI analysis logic
+├── indicators.py # SMA & RSI calculations
+├── chatgpt_agent.py # ChatGPT API calls
+├── history_cache.py # Search history + result caching
+│
+├── templates/
+│ └── index.html # User interface
+│
+└── static/
+├── style.css # Modern design styles
+└── script.js # Input UX support
