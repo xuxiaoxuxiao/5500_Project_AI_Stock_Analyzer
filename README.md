@@ -32,29 +32,5 @@ AI Stock Analyzer is a lightweight web application that analyzes U.S. stock perf
 | Frontend | HTML + CSS (custom modern design) |
 | Caching | Local JSON history |
 
----
 
-## 📦 Project Structure
-
-stock_analyzer/              ← main project folder
-│
-├── app.py                   ← only Flask routes here
-│
-├── core/                    ← business logic layer
-│   ├── analysis.py          ← analyze_stock() lives here
-│   ├── indicators.py        ← SMA / RSI functions
-│   ├── ai_agent.py          ← OpenAI integration
-│   └── cache.py             ← caching + history logic
-│
-├── templates/               ← Jinja2 HTML files
-│   └── index.html
-│
-├── static/                  ← Frontend resources
-│   ├── style.css
-│   └── script.js
-│
-├── .env
-├── history.json
-├── requirements.txt
-└── README.md
 
