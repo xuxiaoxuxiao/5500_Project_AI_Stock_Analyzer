@@ -55,12 +55,87 @@
         "disclaimer": "This analysis is for educational purposes only and should not be considered financial advice."
       },
       "chart_data": []
+    },
+    "NVDA": {
+      "ticker": "NVDA",
+      "last_price": "182.41",
+      "sma20": "184.47",
+      "sma50": "187.09",
+      "rsi": "N/A",
+      "recommendation": {
+        "action": "Hold",
+        "confidence": 6,
+        "explanation": "The last close price of NVDA at 182.41 is below both the 20-day SMA (184.47) and the 50-day SMA (187.09), indicating a bearish trend in the short to medium term. The absence of a 14-day RSI value makes it difficult to assess momentum, but the current price being below the moving averages suggests that it may not be the best time to buy. Holding may be prudent until further indicators provide more clarity.",
+        "disclaimer": "This analysis is for educational purposes only and should not be considered financial advice."
+      },
+      "chart_data": []
+    },
+    "MSFT": {
+      "ticker": "MSFT",
+      "last_price": "483.16",
+      "sma20": "490.68",
+      "sma50": "507.04",
+      "rsi": "N/A",
+      "recommendation": {
+        "action": "Sell",
+        "confidence": 7,
+        "explanation": "The last close price of MSFT at 483.16 is below both the 20-day SMA (490.68) and the 50-day SMA (507.04), indicating a bearish trend. The absence of a 14-day RSI value prevents further analysis on momentum, but the current price action suggests that the stock is underperforming relative to its recent averages.",
+        "disclaimer": "This analysis is for educational purposes only and should not be considered financial advice. Please consult a financial advisor before making any investment decisions."
+      },
+      "chart_data": []
+    },
+    "PG": {
+      "ticker": "PG",
+      "last_price": "143.45",
+      "sma20": "147.21",
+      "sma50": "148.78",
+      "rsi": "N/A",
+      "recommendation": {
+        "action": "Sell",
+        "confidence": 7,
+        "explanation": "The last close price of PG at 143.45 is below both the 20-day SMA of 147.21 and the 50-day SMA of 148.78. This indicates a bearish trend, suggesting that the stock may continue to decline in the short term. The absence of a 14-day RSI value means we cannot assess overbought or oversold conditions, but the current price action relative to the SMAs is a strong indicator to consider selling.",
+        "disclaimer": "This analysis is for educational purposes only and is not financial advice. Please consult with a financial advisor before making any investment decisions."
+      },
+      "chart_data": []
+    },
+    "BABA": {
+      "ticker": "BABA",
+      "last_price": "158.32",
+      "sma20": "158.95",
+      "sma50": "167.55",
+      "rsi": "N/A",
+      "recommendation": {
+        "action": "Hold",
+        "confidence": 6,
+        "explanation": "The last close price of BABA at 158.32 is slightly below the 20-day SMA of 158.95, indicating a potential short-term bearish trend. However, it is significantly below the 50-day SMA of 167.55, which suggests a longer-term bearish outlook. The RSI is not available, making it difficult to assess momentum. Given these factors, holding the stock may be prudent until further indicators are available.",
+        "disclaimer": "This analysis is for educational purposes only and should not be considered financial advice."
+      },
+      "chart_data": []
+    },
+    "NFLX": {
+      "ticker": "NFLX",
+      "last_price": "100.24",
+      "sma20": "108.69",
+      "sma50": "113.16",
+      "rsi": "N/A",
+      "recommendation": {
+        "action": "Sell",
+        "confidence": 7,
+        "explanation": "The last close price of NFLX at 100.24 is below both the 20-day SMA (108.69) and the 50-day SMA (113.16), indicating a bearish trend. The price being below these moving averages suggests that the stock may continue to decline in the near term. Additionally, the RSI is not available, which limits the analysis but reinforces caution in this situation.",
+        "disclaimer": "This analysis is for educational purposes only and should not be considered financial advice. Please consult with a financial advisor before making any investment decisions."
+      },
+      "chart_data": []
     }
   },
   "history": [
+    "AAPL",
+    "NFLX",
+    "BABA",
+    "PG",
     "GOOG",
-    "META",
+    "MSFT",
+    "NVDA",
     "SNPS",
-    "AAPL"
+    "META"
   ]
 }

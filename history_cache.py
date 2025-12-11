@@ -56,3 +56,5 @@ def store_result(ticker, result):
     cache["data"] = data_cache
 
     save_cache(cache)
+
+

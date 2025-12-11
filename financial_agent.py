@@ -43,7 +43,7 @@ class StockIndicators:
     last_price: float
     sma_20: float
     sma_50: float
-    rsi_14: float
+    # rsi_14: float
 
 
 # =========================
@@ -79,7 +79,7 @@ def get_stock_indicators(ticker: str) -> StockIndicators:
     """
     Fetch historical data with yfinance and compute basic indicators.
     """
-    data = yf.download(ticker, period="6mo", interval="1d", progress=False)
+    data = yf.download(ticker, period="6mo", interval="1d", progress=TRUE)
 
     if data.empty:
         raise ValueError(f"No data returned for ticker {ticker}")
@@ -99,7 +99,7 @@ def get_stock_indicators(ticker: str) -> StockIndicators:
         last_price=last_price,
         sma_20=sma_20,
         sma_50=sma_50,
-        rsi_14=rsi_14,
+        #rsi_14=rsi_14,
     )
 
 
@@ -165,7 +165,7 @@ DO NOT include any backticks or code fences, just raw JSON.
             "action": "HOLD",
             "confidence": 5,
             "explanation": content,
-            "disclaimer": "This is not financial advice.",
+            # "disclaimer": "This is not financial advice.",
         }
 
     return parsed
@@ -196,7 +196,7 @@ def main():
     print(f"Last Price   : {indicators.last_price:.2f}")
     print(f"SMA20        : {indicators.sma_20:.2f}")
     print(f"SMA50        : {indicators.sma_50:.2f}")
-    print(f"RSI(14)      : {indicators.rsi_14:.2f}")
+    # print(f"RSI(14)      : {indicators.rsi_14:.2f}")
 
     print("\nAsking ChatGPT for a basic recommendation...")
     rec = ask_chatgpt_for_recommendation(indicators)
