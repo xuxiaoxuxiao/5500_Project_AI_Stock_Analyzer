@@ -6,15 +6,28 @@ from pathlib import Path
 import os
 
 # Load .env
-BASE_DIR = Path(__file__).resolve().parent
-dotenv_path = BASE_DIR / ".env"
-load_dotenv(dotenv_path)
+# BASE_DIR = Path(__file__).resolve().parent
+# dotenv_path = BASE_DIR / ".env"
+# load_dotenv(dotenv_path)
 
+# OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+# if not OPENAI_API_KEY:
+#     raise RuntimeError("OPENAI_API_KEY is missing in .env")
+#
+# client = OpenAI(api_key=OPENAI_API_KEY)
+
+
+import os
+from dotenv import load_dotenv
+
+# 1. Load .env for local development ONLY
+load_dotenv()
+
+# 2. Use environment variable provided by Render in production
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
-if not OPENAI_API_KEY:
-    raise RuntimeError("OPENAI_API_KEY is missing in .env")
 
-client = OpenAI(api_key=OPENAI_API_KEY)
+if not OPENAI_API_KEY:
+    raise RuntimeError("OPENAI_API_KEY is missing. Check Render environment variables.")
 
 
 def ask_chatgpt_for_recommendation(indicators):
