@@ -105,3 +105,26 @@ button:active {
     margin-top: 10px;
     font-weight: bold;
 }
+.clear-btn {
+    display: inline-block;
+    padding: 8px 14px;         /* compact size */
+    margin-top: 10px;
+    background: #e2e6eb;
+    color: #1b1d21;
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+    width: auto;               /* <-- makes it small */
+}
+
+.clear-btn:hover {
+    background: #c9ced6;
+}
+
+.clear-btn:active {
+    transform: scale(0.97);
+}
+

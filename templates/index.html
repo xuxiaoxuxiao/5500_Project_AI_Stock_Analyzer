@@ -16,6 +16,7 @@
         <button type="submit">Analyze</button>
     </form>
 
+
     {% if history %}
         <h3>Recent Searches</h3>
         <div class="tag-container">
@@ -23,7 +24,9 @@
                 <button class="tag" onclick="useTicker('{{ item }}')">{{ item }}</button>
             {% endfor %}
         </div>
+        <button id="clear-history" class="clear-btn">Clear Recent Searches</button>
     {% endif %}
+
 
     {% if error_message %}
         <div class="error">{{ error_message }}</div>

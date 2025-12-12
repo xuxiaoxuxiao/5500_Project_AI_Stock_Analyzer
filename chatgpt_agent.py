@@ -9,7 +9,7 @@ import os
 # BASE_DIR = Path(__file__).resolve().parent
 # dotenv_path = BASE_DIR / ".env"
 # load_dotenv(dotenv_path)
-
+#
 # OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 # if not OPENAI_API_KEY:
 #     raise RuntimeError("OPENAI_API_KEY is missing in .env")

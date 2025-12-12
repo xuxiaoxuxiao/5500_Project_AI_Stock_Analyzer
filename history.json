@@ -125,17 +125,46 @@
         "disclaimer": "This analysis is for educational purposes only and should not be considered financial advice. Please consult with a financial advisor before making any investment decisions."
       },
       "chart_data": []
+    },
+    "AVGO": {
+      "ticker": "AVGO",
+      "last_price": "406.37",
+      "sma20": "375.84",
+      "sma50": "361.56",
+      "rsi": "N/A",
+      "recommendation": {
+        "action": "Buy",
+        "confidence": 7,
+        "explanation": "The last close price of AVGO at 406.37 is significantly above both the 20-day SMA of 375.84 and the 50-day SMA of 361.56. This indicates a bullish trend as the stock is trading well above its short-term and medium-term averages. However, the 14-day RSI is not available, which limits the analysis of momentum. Overall, the price action suggests a positive outlook.",
+        "disclaimer": "This analysis is not financial advice and should not be considered as such. Please conduct your own research or consult a financial advisor before making investment decisions."
+      },
+      "chart_data": []
+    },
+    "LULU": {
+      "ticker": "LULU",
+      "last_price": "187.01",
+      "sma20": "177.07",
+      "sma50": "173.81",
+      "rsi": "N/A",
+      "recommendation": {
+        "action": "Buy",
+        "confidence": 7,
+        "explanation": "The last close price of LULU at 187.01 is above both the 20-day SMA (177.07) and the 50-day SMA (173.81), indicating a bullish trend. This suggests that the stock is currently performing well compared to its recent average prices. However, the 14-day RSI is not available, which limits the analysis of momentum. Overall, the price being above the moving averages is a positive sign.",
+        "disclaimer": "This analysis is for educational purposes only and should not be considered financial advice."
+      },
+      "chart_data": []
     }
   },
   "history": [
-    "AAPL",
-    "NFLX",
+    "LULU",
+    "AVGO",
     "BABA",
     "PG",
+    "AAPL",
+    "NFLX",
     "GOOG",
     "MSFT",
     "NVDA",
-    "SNPS",
-    "META"
+    "SNPS"
   ]
 }
