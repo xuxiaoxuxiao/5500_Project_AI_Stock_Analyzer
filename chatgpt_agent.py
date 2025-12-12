@@ -1,39 +1,26 @@
 import json
 from openai import OpenAI
-
+import os
 from dotenv import load_dotenv
 from pathlib import Path
-import os
 
-# Load .env
-# BASE_DIR = Path(__file__).resolve().parent
-# dotenv_path = BASE_DIR / ".env"
-# load_dotenv(dotenv_path)
-#
-# OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
-# if not OPENAI_API_KEY:
-#     raise RuntimeError("OPENAI_API_KEY is missing in .env")
-#
-# client = OpenAI(api_key=OPENAI_API_KEY)
-
-
-import os
-from dotenv import load_dotenv
-
-# 1. Load .env for local development ONLY
+# 1. Load .env locally
 load_dotenv()
 
-# 2. Use environment variable provided by Render in production
+# 2. Pull API key from environment (Render or local)
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
-
 if not OPENAI_API_KEY:
     raise RuntimeError("OPENAI_API_KEY is missing. Check Render environment variables.")
+
+# ✅ FIX: Create the OpenAI client here
+client = OpenAI(api_key=OPENAI_API_KEY)
 
 
 def ask_chatgpt_for_recommendation(indicators):
     """
     Send stock indicators to ChatGPT and return a recommendation dict.
     """
+
     system_prompt = """\
 You are an assistant that does basic, educational stock analysis.
 You are NOT a financial advisor and must always remind the user that your output is not financial advice.
